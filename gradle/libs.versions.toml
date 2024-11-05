@@ -1,0 +1,51 @@
+[versions]
+agp = "8.4.2"
+kotlin = "2.0.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+room = "2.6.1"
+koin = "3.5.0"
+kspVersion = "2.0.0-1.0.23"
+roomCommon = "2.6.1"
+viewModelKtx = "2.8.7"
+liveDataKtx = "2.8.7"
+mockitoCore = "4.5.1"
+mockitoKotlin = "4.0.0"
+coroutineTest = "1.7.1"
+archCoreTesting = "2.2.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "roomCommon" }
+androidx-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "viewModelKtx"}
+androidx-lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "liveDataKtx"}
+
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+androidx-room-compiler = {module = "androidx.room:room-compiler", version.ref = "room"}
+
+androidx-koin = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore"}
+mockito-kotlin = {module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlin"}
+coroutine-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutineTest"}
+androidx-arch-core = { module = "androidx.arch.core:core-testing", version.ref = "archCoreTesting"}
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+devtools-ksp = {id = "com.google.devtools.ksp", version.ref = "kspVersion"}
+
